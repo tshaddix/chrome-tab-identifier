@@ -1,0 +1,31 @@
+{
+  "name": "chrome-tab-identifier",
+  "version": "0.0.1",
+  "description":
+    "Simple utility to fetch the current tab id inside a content-script.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack",
+    "format":
+      "./node_modules/.bin/prettier es6 --write \"{src/**/*.{ts,tsx},webpack.config.js}\"",
+    "precommit": "./node_modules/.bin/lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,json,md,ts,tsx}": ["npm run format", "git add"]
+  },
+  "typings": "src/index.d.ts",
+  "author": "Tyler Shaddix <tylershaddix@gmail.com>",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chrome": "0.0.58",
+    "awesome-typescript-loader": "^3.4.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.10.1",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
+  }
+}
