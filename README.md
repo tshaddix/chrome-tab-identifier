@@ -2,6 +2,12 @@
 
 Simple utility to fetch the current tab id inside a content-script.
 
+## Install
+
+```
+npm install --save chrome-tab-identifier
+```
+
 ## Usage
 
 On your event page:
